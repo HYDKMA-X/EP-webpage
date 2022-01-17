@@ -3,18 +3,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style>
+        *{
+            margin:30px auto;
+            text-align: center;
+        }
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=yaMlRHbDSAEvoaaR4aWMEWyXGiyXrguv"></script>
+    <script src="https://code.bdstatic.com/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="./js/qrcode.js"></script>
+    <script src="./js/js.js"></script>
     <title></title>
-    <script type="text/javascript">
-        navigator.geolocation.getCurrentPosition((position)=>{
-            let lat = position.coords.latitude;// 纬度
-            let lng = position.coords.longitude;// 经度
-
-            alert(lat);
-            alert(lng);
-        });
-    </script>
 </head>
 <body>
-
+    <div id="container" style="width: 512px; height: 378px; border: 1px solid gray;"></div>
+    <div id="result_l"></div>
+    <div id="qrcode"></div>
+    <div id="warning"></div>
 </body>
 </html>
