@@ -1,5 +1,5 @@
 /*
-  by 皓月当空EOBM-X（宿皓翔）
+  by 皓月当空EOBM-X
 */
 
 var geolocation = new BMap.Geolocation();
